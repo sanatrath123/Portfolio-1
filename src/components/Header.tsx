@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { LuSun } from "react-icons/lu";
 import { MdOutlinePhone } from "react-icons/md";
 import { RiWhatsappLine } from "react-icons/ri";

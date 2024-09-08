@@ -6,7 +6,6 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import Header from './Header';
-
 const Hero = () => {
   return (
     <>

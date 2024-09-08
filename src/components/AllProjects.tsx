@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { LuExternalLink } from "react-icons/lu";
 import '../App.css'
 

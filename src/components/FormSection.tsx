@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "../App.css"
 import { BsSendFill } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa";
