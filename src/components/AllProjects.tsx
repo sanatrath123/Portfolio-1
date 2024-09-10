@@ -1,17 +1,23 @@
 
 import { LuExternalLink } from "react-icons/lu";
 import '../App.css'
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 const AllProjects = () => {
+const {theme} = useContext(ThemeContext)
+
+
   return (
-    <div className='max-w-screen-xl  mx-auto   bg-[#111] text-gray-100 flex flex-col gap-9 relative font-link lg:mb-0 mb-5'>
+     <div className={`${theme}`}>
+     <div className={`max-w-screen-xl  mx-auto lg:pt-8   dark:bg-[#111] bg-white dark:text-gray-100 text-black flex flex-col gap-9 relative font-link lg:mb-0 pb-5`}>
      <h2 className="font-bold text-[#1788ae] md:text-[2.5rem] text-3xl border-b-2 border-[#1788ae] pt-3 mx-auto px-3 bg-inherit z-10 ">Latest Work</h2>
 
 {/* 1st project */}
      <div className="w-full flex items-center lg:flex-row flex-col">
      <div className="lg:w-2/4 w-full flex lg:justify-start relative">
-     <div className="relative group hover:scale-110 hover:ease-in hover:duration-100 z-20 lg:mx[1px] mx-auto">
-     <img src="/pokemonfigma@2x.png" className="md:max-w-96  max-w-80 relative z-30 hover:z-10  " alt="" />
+     <div className="relative group hover:scale-110 hover:ease-in hover:duration-100 z-20 lg:mx[1px] ">
+     <img src="/pokemonfigma@2x.png" className="md:max-w-96  sm:max-w-[22.5rem]  relative z-30 hover:z-10  " alt="" />
 
 {/* hover popup */}
 <span className="bg-[#A3F8F0] px-3 py-2 h-9 rounded-xl flex gap-2 items-center absolute left-1/2 -translate-x-1/2 top-4 z-10 ease-jump  duration-100 after:w-4 after:h-4 after:bg-[#A3F8F0] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:rotate-45 group-hover:-top-14 text-gray-900">Hariguru<LuExternalLink/></span>
@@ -59,12 +65,12 @@ HariGurus is a one-stop-shop for all Hindu religious, customs and traditional re
       </div>
       <div className="lg:w-2/4 w-full flex lg:justify-end relative  ">
       <div className="relative group hover:scale-110 hover:ease-in hover:duration-100 z-20 lg:mx-[1px] mx-auto">
-     <img src="https://anuragsinghbam.netlify.app/images/eazygrad.webp" className="md:max-w-96 max-w-80 relative z-30 hover:z-10 " alt="" />
+     <img src="https://anuragsinghbam.netlify.app/images/eazygrad.webp" className="md:max-w-96 max-w-[22.5] relative z-30 hover:z-10 " alt="" />
 
 {/* hover popup */}
 <span className="bg-[#fc815c] px-3 py-2 h-9 rounded-xl flex gap-2 items-center absolute left-1/2 -translate-x-1/2 top-4 z-10 ease-jump  duration-100 after:w-4 after:h-4 after:bg-[#fc815c] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:rotate-45 group-hover:-top-14">Hariguru<LuExternalLink/></span>
      </div>
-     <div className="w-9/12 hidden md:block -z-0 bg-[#fc815c] h-[1px] absolute -left-2 top-1/2 -translate-y-1/2">
+     <div className="w-9/12 hidden lg:block -z-0 bg-[#fc815c] h-[1px] absolute -left-2 top-1/2 -translate-y-1/2">
      <div className="w-4 h-4 bg-white rounded-full border-[2px] border-[#fc815c] absolute left-0 bottom-1/2 translate-y-1/2"></div>
 </div>
      </div>
@@ -73,15 +79,15 @@ HariGurus is a one-stop-shop for all Hindu religious, customs and traditional re
 {/* 1st project */}
 <div className="w-full flex items-center lg:flex-row flex-col">
      <div className="lg:w-2/4 w-full flex lg:justify-start relative">
-     <div className="relative group hover:scale-110 hover:ease-in hover:duration-100 z-20 lg:mx[1px] mx-auto">
-     <img src="/pokemonfigma@2x.png" className="md:max-w-96  max-w-80 relative z-30 hover:z-10  " alt="" />
+     <div className="relative group hover:scale-110 hover:ease-in hover:duration-100 z-20 lg:mx[1px] ">
+     <img src="/pokemonfigma@2x.png" className="md:max-w-96  sm:max-w-[22.5rem]  relative z-30 hover:z-10  " alt="" />
 
 {/* hover popup */}
 <span className="bg-[#A3F8F0] px-3 py-2 h-9 rounded-xl flex gap-2 items-center absolute left-1/2 -translate-x-1/2 top-4 z-10 ease-jump  duration-100 after:w-4 after:h-4 after:bg-[#A3F8F0] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:rotate-45 group-hover:-top-14 text-gray-900">Hariguru<LuExternalLink/></span>
      </div>
 
       {/* connector line hor */}
-<div className="w-9/12 hidden lg:block -z-0 bg-[#A3F8F0] h-[2px] absolute -right-2 top-1/2 -translate-y-1/2">
+<div className="w-8/12 hidden lg:block -z-0 bg-[#A3F8F0] h-[2px] absolute -right-2 top-1/2 -translate-y-1/2">
      <div className="w-4 h-4 bg-white rounded-full border-[2px] border-[#A3F8F0] absolute right-0 bottom-1/2 translate-y-1/2"></div>
 </div>
      </div>
@@ -122,12 +128,12 @@ HariGurus is a one-stop-shop for all Hindu religious, customs and traditional re
       </div>
       <div className="lg:w-2/4 w-full flex lg:justify-end relative  ">
       <div className="relative group hover:scale-110 hover:ease-in hover:duration-100 z-20 lg:mx-[1px] mx-auto">
-     <img src="https://anuragsinghbam.netlify.app/images/eazygrad.webp" className="md:max-w-96 max-w-80 relative z-30 hover:z-10 " alt="" />
+     <img src="https://anuragsinghbam.netlify.app/images/eazygrad.webp" className="md:max-w-96 max-w-[22.5] relative z-30 hover:z-10 " alt="" />
 
 {/* hover popup */}
 <span className="bg-[#fc815c] px-3 py-2 h-9 rounded-xl flex gap-2 items-center absolute left-1/2 -translate-x-1/2 top-4 z-10 ease-jump  duration-100 after:w-4 after:h-4 after:bg-[#fc815c] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:rotate-45 group-hover:-top-14">Hariguru<LuExternalLink/></span>
      </div>
-     <div className="w-9/12 hidden md:block -z-0 bg-[#fc815c] h-[1px] absolute -left-2 top-1/2 -translate-y-1/2">
+     <div className="w-9/12 hidden lg:block -z-0 bg-[#fc815c] h-[1px] absolute -left-2 top-1/2 -translate-y-1/2">
      <div className="w-4 h-4 bg-white rounded-full border-[2px] border-[#fc815c] absolute left-0 bottom-1/2 translate-y-1/2"></div>
 </div>
      </div>
@@ -136,6 +142,7 @@ HariGurus is a one-stop-shop for all Hindu religious, customs and traditional re
 {/* line */}
 <div className="w-[2px] lg:block hidden  bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2">
 </div>
+    </div>
     </div>
   )
 }
